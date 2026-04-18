@@ -1,0 +1,119 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tokoh Bunga Si Tasya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;
+0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,
+200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../assets/js/script.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <a href="../index.html" class="btn btn-sm btn-outline-secondary mb-4">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+
+                <div class="card border-0 shadow-sm p-4 p-md-5" style="border-radius: 20px;">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold" style="color: #c2185b;">Place Your <span style="color: #333;">Order</span></h2>
+                        <p class="text-muted">Silahkan isi formulir di bawah ini untuk pemesanan bunga.</p>
+                    </div>
+
+                    <form id="orderForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Nama Lengkap</label>
+                                <input type="text" id="buyerName" class="form-control" placeholder="Contoh: Tasya" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Nomor WhatsApp</label>
+                                <input type="tel" id="buyerPhone" class="form-control" placeholder="0812..." required>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <h5 class="fw-bold" style="border-bottom: 2px solid #fdf2f5; padding-bottom: 10px;">Detail Pesanan</h5>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Pilih Kategori Produk</label>
+                                <select id="productType" class="form-select" required>
+                                    <option value="" selected disabled>Pilih Kategori...</option>
+                                    <option value="Premium Bouquet">Premium Bouquet</option>
+                                    <option value="Single Rose">Single Rose</option>
+                                    <option value="Wedding Flowers">Wedding Flowers</option>
+                                    <option value="Bloombox">Bloombox</option>
+                                    <option value="Custom Request">Lainnya (Custom)</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold">Nama Produk / Deskripsi Custom</label>
+                                <textarea id="productDetail" class="form-control" rows="2" placeholder="Sebutkan nama produk dari katalog atau deskripsi bunga yang diinginkan" required></textarea>
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <h5 class="fw-bold" style="border-bottom: 2px solid #fdf2f5; padding-bottom: 10px;">Pengiriman</h5>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Tanggal Kirim</label>
+                                <input type="date" id="shipDate" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Metode</label>
+                                <select id="shipMethod" class="form-select">
+                                    <option value="Ambil di Toko">Ambil di Toko</option>
+                                    <option value="Kirim ke Alamat (Kurir)">Kirim ke Alamat (Kurir)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold">Alamat Lengkap (Kosongkan jika ambil di toko)</label>
+                                <textarea id="address" class="form-control" rows="3" placeholder="Jl. Medokan Asri..."></textarea>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <button type="submit" class="btn w-100 py-3 text-white fw-bold" style="background-color: #c2185b; border-radius: 10px; font-size: 1.1rem;">
+                                    <i class="fab fa-whatsapp me-2"></i> Kirim Pesanan ke WhatsApp
+                                </button>
+                                <p class="text-center mt-3 small text-muted">Pesanan akan otomatis diteruskan ke WhatsApp admin.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+

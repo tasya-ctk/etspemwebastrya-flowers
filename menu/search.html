@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tokoh Bunga Si Tasya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;
+0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,
+200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/script.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body sticky-top">
+      <div class="container-lg px-sm-5">
+        <img
+          src="../assets/img/logo.png"
+          alt="Logo"
+          width="130"
+          class="d-inline-block align-text-top"
+        />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="search.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimoni.html">Testimoni | FAQ</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a
+                href="order.html"
+                class="btn"
+                tabindex="-1"
+                role="button"
+                aria-disabled="true"
+                >Order</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="catalog container-lg px-5">
+        <div class="row my-5 text-center g-3">
+          <h1 class="title">Catalog <span>Produk</span></h1>
+          <div class="catalog1 ">
+            <form class="d-flex align-items-center" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div class="filter">
+            <div class="col-12 d-flex justify-content-center flex-wrap gap-2">
+              <button
+                class="btn btn-filter active"
+                onclick="filterProduct('all')"
+              >
+                All Products
+              </button>
+              <button class="btn btn-filter" onclick="filterProduct('premium')">
+                Best Sellers
+              </button>
+              <button class="btn btn-filter" onclick="filterProduct('bouquet')">
+                Premium
+              </button>
+              <button class="btn btn-filter" onclick="filterProduct('wedding')">
+                Standart
+              </button>
+              <button class="btn btn-filter" onclick="filterProduct('gift')">
+                Gift Boxes
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content2-main">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (1).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (2).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (3).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (1).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (2).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (3).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div><div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (1).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div><div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (2).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div><div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (3).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+           <div class="col-lg-3 col-md-4 col-6">
+              <div class="card custom-card mb-3">
+                <div class="img-wrapper">
+                  <img
+                    src="../assets/img/img (1).jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body row">
+                  <div class="col-6 text-start">Arlina</div>
+                  <div class="col-6 text-end">
+                    <span class="badge-custom">31</span>
+                  </div>
+                  <div class="col-12 text-harga">Rp.500.000</div>
+                </div>
+                <div
+                  class="card-footer d-flex align-items-center justify-content-center gap-2"
+                >
+                  <i class="fa-brands fa-whatsapp fs-4"></i>
+                  <span>Order Now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <h5 class="footer-title">ABOUT US</h5>
+            <p class="footer-text">
+              Astrya Flowers menyediakan berbagai rangkaian bunga segar untuk
+              kado, ucapan, dan dekorasi. Tersedia di Surabaya dengan kualitas
+              bunga terbaik. Buka setiap hari untuk melayani kebutuhan bunga
+              Anda.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-lg-center">
+            <h5 class="footer-title">SOCIAL MEDIA</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12">
+            <h5 class="footer-title">CONTACT US</h5>
+            <div class="contact-info">
+              <div class="row mb-2">
+                <div class="col-4 fw-bold label-color">Whatsapp</div>
+                <div class="col-8 footer-text">0842 5466 ***2</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4 fw-bold label-color">Email</div>
+                <div class="col-8 footer-text">astryaflowers@gmail.com</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-4 fw-bold label-color">Location</div>
+                <div class="col-8 footer-text">Jl. Cipunegara No.16A, Surabaya</div>
+              </div>
+              <div class="row">
+                <div class="col-4 fw-bold label-color">Kritik & Saran</div>
+                <div class="col-8 footer-text">0842 5466 ***2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+          <hr class="footer-hr" />
+          <p>&copy; 2026 BY ASTYRA FLOWERS</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
